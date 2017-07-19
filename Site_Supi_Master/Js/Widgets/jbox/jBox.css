@@ -1,0 +1,131 @@
+
+/* Global */
+
+.jBox-wrapper {
+	text-align: left;
+}
+
+.jBox-wrapper,
+.jBox-wrapper * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.jBox-title{
+  	position: relative;
+	word-break: break-word;
+    background: rgba(242,242,242,1);
+    vertical-align:text-top;
+    font: normal 15px/normal "Actor", Helvetica, sans-serif;    
+    background: url("ok.png"), rgba(242,242,242,1);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+    text-indent : 20px;  
+    height:28px; 
+ }
+ 
+.jBox-content,
+.jBox-container {
+	position: relative;
+	word-break: break-word;
+	font: normal 14px/normal "Actor", Helvetica, sans-serif;
+	
+}
+
+.jBox-container {
+	background: #fff;
+	
+}
+
+.jBox-content {
+	padding: 8px 10px;
+	overflow: auto;
+	-webkit-transition: opacity .15s;
+	transition: opacity .15s;
+	
+}
+
+/* jBox Tooltip */
+
+.jBox-Tooltip .jBox-container,
+.jBox-Mouse .jBox-container {
+	border-radius: 3px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.jBox-Tooltip .jBox-title,
+.jBox-Mouse .jBox-title {
+	padding: 8px 10px 0;
+	font-weight: bold;
+}
+
+.jBox-hasTitle.jBox-Tooltip .jBox-content,
+.jBox-hasTitle.jBox-Mouse .jBox-content {
+	padding-top: 5px;
+}
+
+/* Pointer */
+
+.jBox-pointer {
+	position: absolute;
+	overflow: hidden;
+}
+
+.jBox-pointer-top { top: 0; }
+.jBox-pointer-bottom { bottom: 0; }
+.jBox-pointer-left { left: 0; }
+.jBox-pointer-right { right: 0; }
+
+.jBox-pointer-top,
+.jBox-pointer-bottom {
+	width: 30px;
+	height: 12px;
+}
+
+.jBox-pointer-left,
+.jBox-pointer-right {
+	width: 12px;
+	height: 30px;
+}
+
+.jBox-pointer:after {
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background: #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.jBox-pointer-top:after {
+	left: 5px;
+	top: 6px;
+	box-shadow: -1px -1px 4px rgba(0, 0, 0, .2);
+}
+
+.jBox-pointer-right:after {
+	top: 5px;
+	right: 6px;
+	box-shadow: 1px -1px 4px rgba(0, 0, 0, .2);
+}
+
+.jBox-pointer-bottom:after {
+	left: 5px;
+	bottom: 6px;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+}
+
+.jBox-pointer-left:after {
+	top: 5px;
+	left: 6px;
+	box-shadow: -1px 1px 4px rgba(0, 0, 0, .2);
+}

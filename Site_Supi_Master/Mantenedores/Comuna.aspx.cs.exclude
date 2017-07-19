@@ -1,0 +1,139 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.Security;
+using System.Collections;
+using System.Data;
+
+public partial class Mantenedores_Comuna : System.Web.UI.Page
+{
+    Usuario_Controller _U = new Usuario_Controller();
+    Generico_Controller _G = new Generico_Controller();
+    Salas_Controller _S = new Salas_Controller();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // ***** ESTADO DEL SERVIDOR WEB ******
+        Boolean _AccesoWeb = _G._Get_Estado_Servidor();
+        if (!_AccesoWeb)
+        {
+            Response.Redirect("Mantenedores/MantencionServidor.aspx");
+            return;
+        }
+
+        if (!IsPostBack)
+        {
+            if ((String)Session["Rut"] == null || (String)Session["Rut"] == "")
+            {
+                Response.Redirect("~/Login.aspx");
+                return;
+            }
+            else
+            {
+                Boolean _Acceso = _U._Tiene_Acceso_Pagina((String)Session["Rut"], Request.Url.Segments[Request.Url.Segments.Length - 1]);
+                if (!_Acceso)
+                {
+                    Response.Redirect("Menu.aspx");
+                    return;
+                }
+            }
+            lbl_session.Text = (String)Session["Usuario"];
+
+            //********* RESETEO DE CACHEO PARA ESTA PAGINA *************//
+            Cache["LECTURA_COM"] = _U._Get_Roles_Pagina((String)Session["Rut"], Request.Url.Segments[Request.Url.Segments.Length - 1], "LECTURA");
+            Cache["ESCRITURA_COM"] = _U._Get_Roles_Pagina((String)Session["Rut"], Request.Url.Segments[Request.Url.Segments.Length - 1], "ESCRITURA");
+            Cache["EXPORTACION_COM"] = _U._Get_Roles_Pagina((String)Session["Rut"], Request.Url.Segments[Request.Url.Segments.Length - 1], "EXPORTACION");
+            Cache["ELIMINACION_COM"] = _U._Get_Roles_Pagina((String)Session["Rut"], Request.Url.Segments[Request.Url.Segments.Length - 1], "ELIMINAR");
+            Response.Cache.SetExpires(DateTime.Now.AddMinutes(60));
+            //********* RESETEO DE CACHEO PARA ESTA PAGINA *************//
+
+            DataSet _Ds_Regiones = _S._Get_All_Regiones();
+            cbo_region.DataSource = _Ds_Regiones.Tables[0];
+            cbo_region.DataValueField = _Ds_Regiones.Tables[0].Columns[1].ToString();
+            cbo_region.DataTextField = _Ds_Regiones.Tables[0].Columns[0].ToString();
+            cbo_region.DataBind();
+
+            DataSet _Ds_Provincias = _S._Get_Load_All_Provincias("");
+            cbo_provincia.DataSource = _Ds_Provincias.Tables[0];
+            cbo_provincia.DataValueField = _Ds_Provincias.Tables[0].Columns[1].ToString();
+            cbo_provincia.DataTextField = _Ds_Provincias.Tables[0].Columns[0].ToString();
+            cbo_provincia.DataBind();
+            
+            txt_comuna.Focus();
+            //btn_volver.Visible = false;
+        }
+    }
+
+    protected void btn_aceptar_Click(object sender, EventArgs e)
+    {
+        if ((String)Cache["ESCRITURA_COM"] == "1")
+        {
+            //String _Success = _S._Insert_Comuna(txt_comuna.Text.ToUpper().Trim(), cbo_region.SelectedValue, cbo_provincia.SelectedValue);
+
+            //if (_Success == "SUCCESS")
+            //{
+            //    ClientScript.RegisterStartupScript(this.GetType(), "Script", "swal('success', 'SE HA INGRESADO COMUNA CORRECTAMENTE', 'success');", true);
+            //}
+            //else if (_Success == "EXISTE")
+            //{
+            //    ClientScript.RegisterStartupScript(this.GetType(), "Script", "swal('Error', 'YA EXISTE LA COMUNA INGRESADA, NO SE PUEDE INGRESAR LOS DATOS', 'error');", true);
+            //}
+            //else
+            //{
+            //    ClientScript.RegisterStartupScript(this.GetType(), "Script", "swal('Error', 'NO SE PUEDE CONECTAR CON EL SERVIDOR', 'error');", true);
+            //}
+        }
+        else
+        {
+            ClientScript.RegisterStartupScript(this.GetType(), "Acceso", "swal('Denegado', 'No tienes privilegios para realizar esta accion', 'error');", true);
+        }  
+    }
+
+    protected void btn_cancelar_Click(object sender, EventArgs e)
+    {
+        txt_comuna.Text = "";
+        txt_comuna.Focus();
+    }
+
+    protected void btn_volver_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("MenuMantenedores.aspx");
+    }
+
+    protected void btn_session(object sender, EventArgs e)
+    {
+        try
+        {
+            String _Id = _U._Get_Id_Pagina(Request.Url.Segments[Request.Url.Segments.Length - 1]);
+            Boolean _T = _G._Set_Insert_Logs(Session["Id_Usuario"].ToString(), DateTime.Now.ToString("yyyy-MM-dd H:mm:ss"), "LOGOUT", _Id, "", "");
+        }
+        catch (Exception) { }
+
+        Session.Clear();
+        Session.Abandon();
+
+        //Eliminar todas las Cache del sistema.........
+        Cache.Remove("LECTURA");
+        Cache.Remove("ESCRITURA");
+        Cache.Remove("EXPORTACION");
+        Cache.Remove("ELIMINACION");
+        Cache.Remove("Usuario");
+        Cache.Remove("Id_Usuario");
+
+        FormsAuthentication.SignOut();
+        Response.Redirect(FormsAuthentication.LoginUrl);  
+    }
+
+    protected void cbo_region_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        DataSet _Ds_Provincias = _S._Get_Load_All_Provincias(cbo_region.SelectedValue);
+        cbo_provincia.DataSource = _Ds_Provincias.Tables[0];
+        cbo_provincia.DataValueField = _Ds_Provincias.Tables[0].Columns[1].ToString();
+        cbo_provincia.DataTextField = _Ds_Provincias.Tables[0].Columns[0].ToString();
+        cbo_provincia.DataBind();
+            
+    }
+}

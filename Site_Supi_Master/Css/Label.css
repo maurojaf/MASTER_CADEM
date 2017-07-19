@@ -1,0 +1,107 @@
+﻿   .neon-text 
+    {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;     
+            font-family: Open Sans, sans-serif;
+            font-size: 30px;
+            color: rgb(64, 126, 196);
+            text-align: left;
+            -o-text-overflow: clip;
+            text-overflow: clip;
+            vertical-align:bottom;
+                     
+     }
+
+  
+     .neon-text-small
+    {
+        border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            font: normal normal bold 15px/normal "actor", Helvetica, sans-serif;
+            color: rgb(64, 126, 196);
+            text-align: left;
+            -o-text-overflow: clip;
+            text-overflow: clip;
+                     
+     }
+
+.nove-flat
+{
+    font: normal 20px/1 "actor", Helvetica, sans-serif;
+color: #ffff;
+text-align: left;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+}
+    
+.text-session{
+font-family: Open Sans, sans-serif;
+color: rgba(33,64,188,1);
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+}
+
+.text-session-small
+{
+font: normal 10px/1 "Actor", Helvetica, sans-serif;
+color: rgba(33,64,188,1);
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+}
+
+        .label-css 
+        {
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          box-sizing: content-box;
+          border: none;
+          font: normal 13px/1 "Actor", Helvetica, sans-serif;
+          color: black;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          text-align:right;
+        }
+
+       .neon-label
+        {
+            border: none;
+            font:bold 40px/normal "actor", Helvetica, sans-serif;
+            color: rgb(64, 126, 196);
+            text-align: center;   
+            font-family: Open Sans, sans-serif;
+        }
+             
+        .textomantenedores 
+        {
+            outline: 0;
+            color: coral;
+            font-family: Open Sans, sans-serif ;
+            text-align:right;
+            font-size: 13px;          
+        }
+        
+        .textonaranjo 
+        {
+            outline: 0;
+            color: coral;
+            font-family: Open Sans, sans-serif ;
+            text-align:right;
+            font-size: 12px;  
+            font-weight:bold;      
+        }
+        
+       .titulomenu
+       {
+            font: normal 35px/normal "Actor", Helvetica, sans-serif;
+            color: rgb(64, 126, 196);
+            -o-text-overflow: clip;
+            text-overflow: clip;
+           }

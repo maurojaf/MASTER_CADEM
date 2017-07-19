@@ -1,0 +1,313 @@
+﻿
+body{
+    margin:0px 0px 0px 0px;
+}
+
+.button-enjoy 
+{
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font: normal 16px/normal "Actor", Helvetica, sans-serif;
+  color: rgba(255,255,255,0.9);
+  text-indent: 3px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #0199d9;
+    margin-top: 5px;
+}
+
+.button-enjoy:hover 
+{
+  border: 1px solid #026a93;
+  background:  #026a93;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+
+}
+
+
+
+.button-red-enjoy 
+{
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #f74c4c;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal "Actor", Helvetica, sans-serif;
+  color: rgba(255,255,255,0.9);
+  text-indent: 3px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #f74c4c;
+  }
+
+.button-red-enjoy:hover 
+{
+  border: 1px solid #f42929;
+  background: #f42929;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+}
+
+
+
+.button-enjoy-back 
+{
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font: normal 16px/normal "Actor", Helvetica, sans-serif;
+  color: rgba(255,255,255,0.9);
+  text-indent: 3px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #0199d9;
+}
+
+.button-enjoy-back:hover 
+{
+  border: 1px solid #026a93;
+  background: #026a93;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+}
+
+.button-enjoy-back:active 
+{
+  background: url("../images/back.png"), #026a93;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 20px auto;
+  background-size: 20px auto;
+}
+
+
+.button-search 
+{   
+    cursor: pointer;
+    font: normal 16px/normal "Times New Roman", Times, serif;
+    background: url("../images/search.png"), #f1c40f;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+    border: 1px solid rgb(255,127,80);
+    border-left-width: 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    outline: none;
+    width:25px;
+    height:25px;
+  }
+  
+  .button-select-menu 
+  {
+   display: inline-block;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+   cursor: pointer;
+   padding: 10px 20px;
+   border: 0px ;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   -moz-border-radius:3px;
+   font: normal 16px/normal "Actor", Helvetica, sans-serif;
+   color: rgba(255,255,255,0.9);
+   background: rgba(42,82,137,1);
+   width:40%;
+   height:20px;
+   outline:none;
+   margin-top:4px;
+}
+
+.button-select-menu:hover 
+{
+  background: rgba(21,57,109,1);
+  outline: none;
+}
+
+
+
+        .close-session
+        {
+          display: inline-block;
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          box-sizing: content-box;
+          cursor: pointer;
+          padding: 10px 20px;
+          font: normal 16px/normal "Actor", Helvetica, sans-serif;
+          color: rgba(2,92,127,1);
+          border: 1px solid transparent;
+          -o-text-overflow: clip;
+          text-overflow: clip;
+          background: url("../images/user.png"), transparent;
+          background-repeat: no-repeat;
+          background-position: 2% 50%;
+          -webkit-background-origin: padding-box;
+          background-origin: padding-box;
+          -webkit-background-clip: border-box;
+          background-clip: border-box;
+          -webkit-background-size: auto auto;
+          background-size: auto auto;
+          -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+          -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+          -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+          transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+          height:100%;
+          outline: none;
+               
+        }
+
+        .close-session:hover 
+        { 
+          color: rgba(255,255,255,0.9);
+          background: url("../images/user.png"), #d80202;
+          border: 1px solid  #d80202;
+          background-repeat: no-repeat;
+          background-position: 2% 50%;
+          -webkit-background-origin: padding-box;
+          background-origin: padding-box;
+          -webkit-background-clip: border-box;
+          background-clip: border-box;
+          -webkit-background-size: auto auto;
+          background-size: auto auto;
+           
+        }
+
+        .close-session:active {
+          background: url("../images/user.png"), #b20303;
+          background-repeat: no-repeat;
+          background-position: 2% 50%;
+          -webkit-background-origin: padding-box;
+          background-origin: padding-box;
+          -webkit-background-clip: border-box;
+          background-clip: border-box;
+          -webkit-background-size: auto auto;
+          background-size: auto auto;
+        }
+        
+        
+          .nombresession
+        {
+          display: inline-block;
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          box-sizing: content-box;
+          cursor: default;
+          padding: 10px 20px;
+          font: normal 14px/normal "Actor", Helvetica, sans-serif;
+          color: rgba(2,92,127,1);
+          -o-text-overflow: clip;
+          text-overflow: clip;
+          background-repeat: no-repeat;
+          background-position: 2% 50%;
+          -webkit-background-origin: padding-box;
+          background-origin: padding-box;
+          -webkit-background-clip: border-box;
+          background-clip: border-box;
+          -webkit-background-size: auto auto;
+          background-size: auto auto;
+          -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+          -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+          -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+          transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+          outline: none;
+}
+        
+button[disabled]:active, button[disabled],input[type="reset"][disabled]:active,input[type="button"][disabled]:active,input[type="button"][disabled],select[disabled] > input[type="button"],select[disabled] > input[type="button"]:active,input[type="submit"][disabled]:active,input[type="submit"][disabled]
+{                
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #c6c6c6;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font: normal 16px/normal "Actor", Helvetica, sans-serif;
+  color: rgba(255,255,255,0.9);
+  text-indent: 4px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background:  #c6c6c6;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  cursor: not-allowed;
+}
+
+.button-enjoymore
+{
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font: normal 10px/normal "Actor", Helvetica, sans-serif;
+  color: rgba(255,255,255,0.9);
+  background: #0199d9;
+}
+
+.button-enjoymore:hover 
+{
+  border: 1px solid #026a93;
+  background:  #026a93;
+}
+
+ 
+ 
+        

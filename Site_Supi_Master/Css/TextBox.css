@@ -1,0 +1,133 @@
+﻿.textbox 
+    {
+        visibility:visible;
+	    padding:4px 4px 4px 7px;
+	    border:1px solid #CCCCCC;
+	    width:200px;
+	    height:15px;
+	    border-radius: 4px;
+	    text-align:left;
+	    font-family: Open Sans, sans-serif;
+        font-size: 13px; 
+    }
+    
+    .textbox:hover 
+    { 
+        outline: 0;
+        border-color: coral; 
+       
+    } 
+    
+    .textbox:focus 
+    { 
+        outline: 0;
+        border-color: coral;
+    } 
+     
+     textbox[disabled], input[type="textbox"]:disabled,  text[disabled] ,input[type="text"]:disabled
+     {
+        padding:4px 4px 4px 7px;
+	    border:1px solid #CCCCCC;
+	    width:200px;
+	    height:15px;
+	    border-radius: 4px;
+	    text-align:left;
+	    background: rgba(229,229,229,1);
+    }
+     
+    .combobox 
+    {
+	    padding:4px 4px 4px 7px;
+	    padding-top:0px;
+	    border:1px solid #CCCCCC;
+	    width:213px;
+	    height:24px;
+	    border-radius: 4px;
+	    font-family: Open Sans, sans-serif;
+        font-size: 13px;          
+        background:#FFFFFF url(../images/dropdown.png);
+        background-repeat: no-repeat;
+        background-position: 99% 50%;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 20px auto;
+        background-size: 20px auto;
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        
+    }
+ 
+   .combobox:hover 
+    { 
+        outline: 0;
+        border-color: coral;
+ 
+    } 
+        
+    .combobox:focus 
+    { 
+        outline: 0;
+        border-color: coral;
+    } 
+
+
+    
+    select[disabled] 
+     {
+        padding:0px 4px 4px 7px;
+         font-family: Open Sans, sans-serif;
+        font-size: 13px;          
+	    border:1px solid #CCCCCC;
+	    width:213px;
+	    height:24px;
+	    border-radius: 4px;
+        background:rgba(229,229,229,1) url(../images/dropdown.png);
+        background-repeat: no-repeat;
+        background-position: 99% 50%;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 20px auto;
+        background-size: 20px auto;
+        -webkit-appearance: none;
+           -moz-appearance:none;
+     }
+         
+    .textboxlogin 
+    {
+	    background:#FFFFFF url(../images/user.png) no-repeat 4px 4px;
+	    padding:4px 4px 4px 27px;
+	    border:1px solid #CCCCCC;
+	    width:200px;
+	    height:20px;
+	    border-radius: 5px;
+    }
+       
+    .textboxlogin:focus 
+    { 
+        outline: 0;
+        border-color: #134da3;
+    } 
+    
+     .textboxpass
+    {
+	    background:#FFFFFF url(../images/pass.png) no-repeat 4px 4px;
+	    padding:4px 4px 4px 27px;	   
+	    border:1px solid #CCCCCC;
+	    width:200px;
+	    height:20px;
+	    border-radius: 5px;
+    }   
+
+    .textboxpass:focus 
+    { 
+         outline: 0;
+         border-color: #134da3;
+    } 
+     
+
+
+  

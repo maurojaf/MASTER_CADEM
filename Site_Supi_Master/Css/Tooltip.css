@@ -1,0 +1,35 @@
+﻿.tooltips 
+{ 
+  display:none;
+   -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 200px;
+  margin: -18px 0 0 -30px;
+  padding: 4px 0 3px;
+  overflow: hidden;
+  border: 1px solid rgba(214,179,40,1);
+  -webkit-border-radius: 15px 0 0 15px;
+  border-radius: 15px 0 0 15px;
+  font: normal 13px/1 "Actor", Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  text-align: left;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: url("../Images/warning.png"), -webkit-linear-gradient(-90deg, rgba(229,234,91,1) 0, rgba(218,224,49,1) 100%);
+  background: url("../Images/warning.png"), -moz-linear-gradient(180deg, rgba(229,234,91,1) 0, rgba(218,224,49,1) 100%);
+  background: url("../Images/warning.png"), linear-gradient(180deg, rgba(229,234,91,1) 0, rgba(218,224,49,1) 100%);
+  background-repeat: no-repeat;
+  background-position: 6% 47%, 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3) ;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3) ;
+  padding-left:35px;
+  position:absolute;
+  
+}

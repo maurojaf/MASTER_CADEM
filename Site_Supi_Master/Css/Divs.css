@@ -1,0 +1,170 @@
+﻿ .divlogin
+    {
+        width:50%;
+        height:300px;
+        border-radius: 0px 0px 20px 20px;
+        -moz-border-radius: 20px 20px 20px 20px;
+        -webkit-border-radius: 20px 20px 20px 20px;
+        border: 0px solid #000000;        
+        -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+        box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);        
+        background-image: url("../images/FONDO2.jpg");
+        background-position: 50% 50%;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: auto auto;
+        background-size: auto auto;
+        
+    }
+    
+     .divcuerpo
+    {
+        width:50%;
+        height:300px;      
+        border: 0px solid #000000; 
+        border-radius: 15px;   
+        -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+        box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);     
+        background-image: url("../images/FONDO2.jpg");
+        background-position: 50% 50%;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: auto auto;
+        background-size: auto auto;  
+    }
+    
+      .subtitulo
+    {
+        font-family: Open Sans, sans-serif;
+        font-size: 20px;
+        color: white;
+        padding-left:20px;
+        height:30px;
+        padding-top:5px;
+        background-image: -webkit-linear-gradient(-90deg, #0199d9 0, #025c7f 100%);
+        background-image: -moz-linear-gradient(180deg, #0199d9 0, #025c7f 100%);
+        background-image: linear-gradient(180deg, #0199d9 0, #025c7f 100%);
+        background-position: 50% 50%;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: auto auto;
+        background-size: auto auto;
+        text-align: left;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;  
+        -webkit-border-radius: 0 5px 5px 5px;
+        border-radius: 0 5px 5px 5px;
+        
+        }
+
+
+ .divmantenedor
+    {
+        width:70%;
+       
+        border-radius: 20px 20px 20px 20px;
+        -moz-border-radius: 20px 20px 20px 20px;
+        -webkit-border-radius: 20px 20px 20px 20px;
+        border: 0px solid #000000;        
+        -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+        box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);        
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(212,212,212,1)));
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+        background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+        background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4', GradientType=0 );
+        color:White;
+    }
+    
+    .divmenu
+    {
+        -webkit-box-shadow: 0 3px 4px 2px rgba(0,0,0,0.2) ;
+        box-shadow: 0 3px 4px 2px rgba(0,0,0,0.2) ;
+        height:45px; 
+        background-image:url(../images/FONDO2.jpg);
+        position:fixed; 
+        width:100%;
+        margin:0px 0px 0px 0px;
+        
+    }
+    
+        .divnombres
+        {
+            height:40px; width:90%;
+            border: 0px solid rgba(255,255,255,1);
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
+        
+        
+        .divtitulopagina
+        {
+            width:50%;
+            height:50px;      
+            border: 0px solid #000000; 
+            border-radius: 10px 10px 10px 10px;   
+            -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+            box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);    
+            background: rgba(255,255,255,1);
+            background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(212,212,212,1)));
+            background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+            background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+            background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(212,212,212,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4', GradientType=0 );
+            color:White;
+            vertical-align:middle;
+            }
+        
+        .loader 
+        {
+	        position: fixed;
+	        left: 0px;
+	        top: 0px;
+	        width: 100%;
+	        height: 100%;
+	        z-index: 9999;
+	        background: url('../Images/page-loader.gif') 50% 50% no-repeat rgba(51,51,51,0.37);
+        }
+ 
+ 
+        .foto
+        {
+-webkit-box-shadow: 0 0 4px 0 rgba(168,168,168,0.76) ;
+box-shadow: 0 0 4px 0 rgba(168,168,168,0.76) ;
+border: 1px solid coral;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+            width:85%;
+            height:100%;
+            float:left;
+        }
+        
+        .tablagaleria
+        {
+             border-radius: 0px 0px 20px 20px;
+            -moz-border-radius: 20px 20px 20px 20px;
+            -webkit-border-radius: 20px 20px 20px 20px;
+            border: 0px solid #000000;        
+            -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);
+            box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.75);        
+            background-image: url("../images/FONDO2.jpg");
+    -webkit-border-radius:10px; border-radius:10px; padding-left:10px;
+    
+            }
